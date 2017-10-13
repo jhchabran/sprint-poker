@@ -13,4 +13,6 @@ config :logger, level: :warn
 config :sprint_poker, SprintPoker.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "sprint_poker_test",
+  username: "postgres",
+  password: "postgres",
   pool: Ecto.Adapters.SQL.Sandbox

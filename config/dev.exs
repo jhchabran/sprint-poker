@@ -19,5 +19,8 @@ config :logger, :console, format: "[$level] $message\n"
 # Configure your database
 config :sprint_poker, SprintPoker.Repo,
   adapter: Ecto.Adapters.Postgres,
+  host: "localhost",
+  username: "postgres",
+  password: "postgres",
   database: "sprint_poker_dev",
   pool_size: 10 # The amount of database connections in the pool
